@@ -10,8 +10,9 @@ import './css/styles.css';
 
 class App extends React.Component {
     componentDidMount() {
-        axios.get('http://localhost:3000/users')
+        axios.get('/users')
             .then(response => {
+                console.log(response.data);
                 store.dispatch(addUsers(response.data.results));
             })
     }
