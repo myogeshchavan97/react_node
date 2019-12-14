@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "build-prod": "webpack -p --env production",
     "start": "webpack-dev-server --watch",
     "start-server": "nodemon server/index.js"
   },
@@ -29,5 +30,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.8.0"
   }
 }
