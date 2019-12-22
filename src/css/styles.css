@@ -6,7 +6,6 @@ body {
     font-family: "Lato", "Helvetica", Helvetica, sans-serif;
     background: #aa9a96;
     color: #fff;
-    padding: 20px;
     letter-spacing: 1px;
     font-weight: 100;
 }
@@ -66,12 +65,13 @@ body {
     }
 
     .user-image img {
-        width: 50%;
+        width: 150px;
         height: auto;
     }
 
     .random-user {
-        text-align: center;
+        text-align: left;
+        word-break: break-word;
         padding: 10px;
     }
 }
